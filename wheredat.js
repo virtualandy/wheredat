@@ -9,7 +9,7 @@
       return results != null ? decodeURIComponent(results[1].replace( /\+/g, " ")) : ''
    }
 
-   var BING_KEY = param('key')
+   var BING_KEY = (param('key') === 'true' ? param('key') : "AoWusux_rZEQ7hsUUFgT5DalJEljvmJSzo3pOjeH1eA4aIojkW9xMnUMs-QiXMjV")
 
    var tsjson = +new Date()
    function jsonp (url) {
